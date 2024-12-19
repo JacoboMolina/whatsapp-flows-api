@@ -13,7 +13,15 @@ ERROR_FILE_PATH = 'errors.log'
 
 def load_private_key() -> Optional[rsa.RSAPrivateKey]:
     """Safely load the private key from environment."""
-    key_data = os.environ.get('WHATSAPP_FLOW_PRIVATE_KEY')
+    try:
+        with open('/home/ubuntu/whatsapp-flows-api/private_key.pem', 'r') as key_file:
+            key_data = key_file.read()
+    except FileNotFoundError:
+        log_error(ERROR_FILE_PATH, "private_key.pem file not found")
+        key_data = None
+    except IOError as e:
+        log_error(ERROR_FILE_PATH, f"Error reading private_key.pem: {str(e)}")
+        key_data = None
     if not key_data:
         log_error(ERROR_FILE_PATH, "WHATSAPP_FLOW_PRIVATE_KEY not set")
         return None
