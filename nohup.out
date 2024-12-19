@@ -1,0 +1,31 @@
+INFO:     Will watch for changes in these directories: ['/home/ubuntu/whatsapp-flows-api']
+INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+INFO:     Started reloader process [4984] using StatReload
+INFO:     Started server process [4986]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     194.26.192.131:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4986]
+INFO:     Stopping reloader process [4984]
+INFO:     Started server process [6404]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+INFO:     185.191.126.213:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     189.190.249.29:0 - "GET /flows_dinamic HTTP/1.0" 405 Method Not Allowed
+INFO:     69.171.234.3:0 - "POST /flows_dinamic HTTP/1.0" 200 OK
+INFO:     51.161.80.229:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     51.161.80.229:0 - "POST / HTTP/1.0" 404 Not Found
+INFO:     69.171.234.114:0 - "POST /flows_dinamic HTTP/1.0" 200 OK
+INFO:     34.244.109.78:0 - "GET /dist/leaflet.js HTTP/1.0" 404 Not Found
+INFO:     34.244.109.78:0 - "GET /_next/static/chunks/486-b946c8846439e3cc.js HTTP/1.0" 404 Not Found
+INFO:     34.244.109.78:0 - "GET /_next/static/chunks/600-d215569bef06dc43.js HTTP/1.0" 404 Not Found
+INFO:     34.244.109.78:0 - "GET /_next/static/chunks/776-1b424127f9b4d776.js HTTP/1.0" 404 Not Found
+INFO:     34.244.109.78:0 - "GET /_next/static/chunks/main-ab3a455859874298.js HTTP/1.0" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6404]
